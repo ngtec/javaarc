@@ -1,0 +1,11 @@
+image:
+    file: .gitpod.Dockerfile
+tasks:
+    - init: gradle build
+    - command: gradle run
+ports:
+    - port: 3000
+      onOpen: open-browser
+vscode:
+    extensions:
+        - vscjava.vscode-java-pack
